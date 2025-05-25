@@ -1,12 +1,28 @@
 :root {
     --text-color: #ffffff;
-    --card-front-color: #7035df;
-    --card-back-color: #9d87ce;
+    --card-front-color: rgb(0, 0, 0);
+    --card-back-color: #000000f3;
 }
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 
 body {
-    background: url('img/fundo-gradiente-de-wireframe-abstrato_23-2149009903.avif');
+    background: linear-gradient(135deg, #0f0114, #0f0114e5, #0f0114d7);
+    color: white;
+   font-family: 'Rajdhani', sans-serif
+}
    
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.imagem-topo {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
 }
 
    
@@ -73,10 +89,13 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .cartao__conteudo__resposta {
     transform: rotateY(180deg);
+     background-color: rgb(255, 255, 255);
+    border: 4px solid var(--card-back-color);
 }
 
 
@@ -92,6 +111,6 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 0.6rem;
-    margin-top: 0.5rem;
+    font-size: 1.0rem;
+    margin-top: 1.0rem;
 }
